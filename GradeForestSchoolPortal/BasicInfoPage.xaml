@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="GradeForestSchoolPortal.BasicInfoPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GradeForestSchoolPortal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Loaded="Grid_Loaded">
+        <ScrollViewer>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Margin="32, 32, 24, 0" FontSize="32">Basic Information</TextBlock>
+                        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Opacity="0.7" Margin="32, 12, 24, 12" FontSize="16">Set the basic information including location, name, etc. of your school.</TextBlock>
+                    </StackPanel>
+                    <Button x:Name="SubmitBtn" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,32,0" Click="SubmitBtn_Click">Submit</Button>
+                </Grid>
+                <StackPanel>
+                    <StackPanel Margin="32, 24, 32, 12">
+                        <TextBlock FontSize="16" Opacity=".7">Name</TextBlock>
+                        <TextBox x:Name="NameTbx" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="32, 24, 32, 12">
+                        <TextBlock FontSize="16" Opacity=".7">Location</TextBlock>
+                        <TextBox x:Name="LocTbx" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="32, 24, 32, 12">
+                        <TextBlock FontSize="16" Opacity=".7">Station (CTA Code)</TextBlock>
+                        <TextBox x:Name="StaTbx" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="32, 24, 32, 12">
+                        <TextBlock FontSize="16" Opacity=".7">Image</TextBlock>
+                        <TextBox x:Name="ImgBox" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                    </StackPanel>
+                    <StackPanel Margin="32, 24, 32, 12">
+                        <TextBlock FontSize="16" Opacity=".7">Description</TextBlock>
+                        <TextBox x:Name="DescriptionTbx" Margin="0, 12, 0, 48" FontSize="16" AcceptsReturn="True" Height="128" TextWrapping="Wrap" >
+                        </TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

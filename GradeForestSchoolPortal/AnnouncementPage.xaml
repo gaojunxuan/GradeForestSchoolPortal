@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="GradeForestSchoolPortal.AnnouncementPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GradeForestSchoolPortal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Margin="32, 32, 24, 0" FontSize="32">Announcement</TextBlock>
+                    <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Opacity="0.7" Margin="32, 12, 24, 12" FontSize="16">Post an announcement.</TextBlock>
+                </StackPanel>
+                <Button x:Name="PostBtn" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,32,0" Click="PostBtn_Click">Post</Button>
+            </Grid>
+            <StackPanel>
+                <StackPanel Margin="32, 24, 32, 12">
+                    <TextBlock FontSize="16" Opacity=".7">Title</TextBlock>
+                    <TextBox x:Name="TitleTbx" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="32, 24, 32, 12">
+                    <TextBlock FontSize="16" Opacity=".7">Poster</TextBlock>
+                    <TextBox x:Name="PosterTbx" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="32, 24, 32, 12">
+                    <TextBlock FontSize="16" Opacity=".7">Image</TextBlock>
+                    <TextBox x:Name="ImgBox" Margin="0, 12, 0, 12" FontSize="16"></TextBox>
+                </StackPanel>
+                <StackPanel Margin="32, 24, 32, 12">
+                    <TextBlock FontSize="16" Opacity=".7">Content</TextBlock>
+                    <TextBox x:Name="ContentTbx" Margin="0, 12, 0, 12" FontSize="16" AcceptsReturn="True" Height="128" TextWrapping="Wrap" >
+                    </TextBox>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

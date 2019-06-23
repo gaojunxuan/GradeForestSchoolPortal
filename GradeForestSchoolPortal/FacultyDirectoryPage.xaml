@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="GradeForestSchoolPortal.FacultyDirectoryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GradeForestSchoolPortal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Margin="32, 32, 24, 0" FontSize="32">Faculty Directory</TextBlock>
+                    <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Opacity="0.7" Margin="32, 12, 24, 12" FontSize="16">Upload a list of staffs and teachers to set the faculty directory.</TextBlock>
+                </StackPanel>
+            </Grid>
+            <Button x:Name="UploadBtn" Margin="32, 32, 24, 0" Click="UploadBtn_Click">Upload</Button>
+        </StackPanel>
+    </Grid>
+</Page>

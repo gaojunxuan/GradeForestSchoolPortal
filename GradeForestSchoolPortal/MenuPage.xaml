@@ -1,0 +1,109 @@
+﻿<Page
+    x:Class="GradeForestSchoolPortal.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GradeForestSchoolPortal"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Loaded="Grid_Loaded">
+        <StackPanel>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <StackPanel Grid.Column="0">
+                    <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Margin="32, 32, 32, 0" FontSize="32">Lunch Menu</TextBlock>
+                    <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Opacity="0.7" Margin="32, 12, 24, 12" FontSize="16">Set the lunch schedule for the entire week.</TextBlock>
+                </StackPanel>
+                <Button x:Name="SubmitBtn" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,32,0" Click="SubmitBtn_Click">Submit</Button>
+            </Grid>
+            <StackPanel Orientation="Horizontal" Margin="32, 24 , 24 , 0">
+                <StackPanel>
+                    <TextBlock FontSize="16" Opacity=".7">Day</TextBlock>
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock FontWeight="Light" Margin="0, 24, 0, 0" FontSize="24" Opacity=".7">Monday</TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock FontWeight="Light" Margin="0, 12, 0, 0" FontSize="24" Opacity=".7">Tuesday</TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock FontWeight="Light" Margin="0, 12, 0, 0" FontSize="24" Opacity=".7">Wednsday</TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock FontWeight="Light" Margin="0, 12, 0, 0" FontSize="24" Opacity=".7">Thursday</TextBlock>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock FontWeight="Light" Margin="0, 12, 0, 0" FontSize="24" Opacity=".7">Friday</TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="24, 0, 0, 0">
+                    <TextBlock FontSize="16" Opacity=".7">Main</TextBlock>
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <StackPanel>
+                            <TextBox x:Name="MainMonTbx" Margin="0, 24, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="MainTuesTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="MainWedTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="MainThurTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="MainFriTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="24, 0, 0, 0">
+                    <TextBlock FontSize="16" Opacity=".7">Side</TextBlock>
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                        <StackPanel>
+                            <TextBox x:Name="SideMonTbx" Margin="0, 24, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="SideTuesTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="SideWedTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="SideThurTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="SideFriTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="24, 0, 0, 0">
+                    <TextBlock FontSize="16" Opacity=".7">Total Calories</TextBlock>
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel>
+                            <TextBox x:Name="CalMonTbx" Margin="0, 24, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="CalTuesTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="CalWedTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="CalThurTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBox x:Name="CalFriTbx" Margin="0, 12, 0, 0" FontSize="16"></TextBox>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>
